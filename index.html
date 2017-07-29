@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>3 Column Layout</title>
+	<style type="text/css">
+
+		
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #808080;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #000000;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: #000000;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #808080;
+			
+		}
+
+		#left {
+			background: #d3d3d3;
+		}
+		
+		#right {
+			background: #d3d3d3;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+        .lilac {
+       		color: #c8a2c8;
+        }
+	</style>
+	
+</head>
+
+<body>
+
+	<header id="header"><h1><span class="lilac">Lilac</span>HTML</h1></header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+        <article>
+        <hr noshade="100" size="5" color="#d3d3d3" width="100%">
+        <noscript><i align="center">Your browser dose not support Javascript or it has been disabled.</i></noscript>
+  	<script language="javascript" type="text/javascript">
+        var ans = prompt("What is your name?","");
+        	if (ans)
+            {
+            alert("Hello "+ans);
+            document.write ("<h3>Welcome, " + ans + "!</h3>);
+            }
+            else {
+            alert("If you wont tell me your name, Ill make one up!")
+            document.write ("Hello, miss Piggy!!");
+            }
+      </script>
+       
+        <hr noshade="100" size="5" color="#d3d3d3" width="100%">
+        </article>
+        <article>
+        <h1>Introduction to HTML</h1>
+        <p>Every webpage you look at is written in a language called HTML. You can think of HTML as the skeleton that gives every webpage structure.</p>
+        </article>
+			<article>
+			
+				<h1>What Is HTML?</h1>
+                <p><abbr title="hyper text markup language">HTML</abbr> is a computer language devised to allow website creation. These websites can then be viewed by anyone else connected to the Internet. It is relatively easy to learn, with the basics being accessible to most people in one sitting; and quite powerful in what it allows you to create. It is constantly undergoing revision and evolution to meet the demands and requirements of the growing Internet audience under the direction of the W3C, the organisation charged with designing and maintaining the language.
+
+The definition of HTML is HyperText Markup Language.</p>
+				
+				<p><script>generateText(50)</script></p>
+			
+			</article>	
+            <article>
+            <h1>How Does It Work?</h1>
+            <p>HTML consists of a series of short codes typed into a text-file by the site author — these are the tags. The text is then saved as a html file, and viewed through a browser, like Internet Explorer or Netscape Navigator. This browser reads the file and translates the text into a visible form, hopefully rendering the page as the author had intended. Writing your own HTML entails using tags correctly to create your vision. You can use anything from a rudimentary text-editor to a powerful graphical editor to create HTML pages</p>
+            </article>
+            <article>
+            <h1>Can You Code A Website Offline?</h1>
+            <p>You can code your entire website offline, storing it all on your own computer, and then just transfer all the files onto the web. Then whenever you have new content, you just add that to the existing online version of your site. It’s really quite simple.</p>
+            </article>
+		</main>
+		<nav id="left" class="column">
+			<h4>Will It Take Long To Learn?</h4>
+			<p>Well, it depends on what you want from it. Knowing HTML will take only a few days of reading and learning the codes for what you want. You can have the basics down in an hour. Once you know the tags you can create HTML pages.
+
+However, using HTML and designing good websites is a different story, which is why I try to do more than just teach you code here at HTML Source — I like to add in as much advice as possible too. Good website design is half skill and half talent, I reckon. Learning techniques and correct use of your tag knowledge will improve your work immensely, and a good understanding of general design and the audience you’re trying to reach will improve your website’s chances of success. Luckily, these things can be researched and understood, as long as you’re willing to work at it so you can output better websites.
+
+The range of skills you will learn as a result of running your own website is impressive. You’ll learn about aspects of graphic design, typography and computer programming. Your efficiency with computers in general increases.You’ll also learn about promotion and your writing will probably improve too, as you adapt to write for certain audiences.
+
+</p>
+		</nav>
+
+		<div id="right" class="column">
+			<h4>Is There Anything HTML Can't Do?</h4>
+            <p>Of course, but since making websites became more popular and needs increased many other supporting languages have been created to allow new stuff to happen, plus HTML is modified every few years to make way for improvements.
+
+Cascading Stylesheets are used to control how your pages are presented, and make pages more accessible. Basic special effects and interaction is provided by JavaScript, which adds a lot of power to basic HTML. Most of this advanced stuff is for later down the road, but when using all of these technologies together, you have a lot of power at your disposal.</p>
+					<a alt="" href="" src="" /><a>
+			<p><script>generateText(1)</script></p>
+           
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer align="center" id="footer"><p>Copyright &copy; Lilac HTML</p></footer>
+	</div>
+
+</body>
+
+</html>
